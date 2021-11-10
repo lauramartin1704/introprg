@@ -10,8 +10,8 @@ public class Endevina{
         int num = Integer.parseInt(Entrada.readLine());
         
         while (!encertat){ //*Mentres sigui fals 
-            if (num >= 1 && num <= 41){
-                System.out.println("És més gran que 10"); //* Print massa petit entre 0 - 41
+            if (num >= 1 && num <= 5){
+                System.out.println("És més gran que 5"); //* Print massa petit entre 0 - 41
                 System.out.println("Introdueix un nombre entre el 1 i el 100");
                 num = Integer.parseInt(Entrada.readLine()); 
             } else if (num >= 43 && num <= 100) {
