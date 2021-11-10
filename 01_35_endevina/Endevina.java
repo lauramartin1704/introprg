@@ -15,7 +15,7 @@ public class Endevina{
                 System.out.println("Introdueix un nombre entre el 1 i el 100");
                 num = Integer.parseInt(Entrada.readLine()); 
             } else if (num >= 43 && num <= 100) {
-                System.out.println("És més petit que 56"); //* Print massa gran entre 43 - 100
+                System.out.println("És més petit que 50"); //* Print massa gran entre 43 - 100
                 System.out.println("Introdueix un nombre entre el 1 i el 100");
                 num = Integer.parseInt(Entrada.readLine());
             } else if (num >= 6 && num <= 41) {
