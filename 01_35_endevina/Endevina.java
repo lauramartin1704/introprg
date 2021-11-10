@@ -15,18 +15,17 @@ public class Endevina{
             if (numero>entrada){
                 System.out.println("És més gran que " + entrada); 
                
+            }else if (entrada <= 0) { 
+                System.out.println("Com a mínim 1"); 
+              
+            }else if (entrada >= 100) { 
+                System.out.println("Com a màxim 100");  //*La resta esta fora de rang
+          
             } else if (numero<entrada) {
                 System.out.println("És més petit que "+ entrada); 
 
             } else if (numero==entrada) {
                 encertat = true;
-            
-            }else if (entrada <= 0) { 
-                System.out.println("Com a mínim 1"); 
-              
-            }else {
-                System.out.println("Com a màxim 100");  //*La resta esta fora de rang
-          
             }
         }
         System.out.println("Has encertat!");
