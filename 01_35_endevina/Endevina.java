@@ -20,6 +20,8 @@ public class Endevina{
                 num = Integer.parseInt(Entrada.readLine());
             } else if (num == 42) { 
                 encertat = true; //*Li dic que aixó es veritat
+            }else if (num == 0) { 
+                System.out.println("Com a mínim 1"); 
             } else {
                 System.out.println("Com a màxim 100");  //*La resta esta fora de rang
                 System.out.println("Introdueix un nombre entre el 1 i el 100");
