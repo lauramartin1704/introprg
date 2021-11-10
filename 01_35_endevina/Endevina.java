@@ -21,14 +21,10 @@ public class Endevina{
             } else if (numero==entrada) {
                 encertat = true;
             
-            }else if (entrada < 0) { 
+            }else if (entrada <= 0) { 
                 System.out.println("Com a mínim 1"); 
               
-            }else if (entrada == 0) { 
-                    System.out.println("És més gran que 0"); 
-                  
-                }
-             else {
+            }else {
                 System.out.println("Com a màxim 100");  //*La resta esta fora de rang
           
             }
