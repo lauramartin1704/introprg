@@ -12,12 +12,12 @@ public class Endevina{
         while (!encertat){ //*Mentres sigui fals 
             System.out.println("Introdueix un nombre entre el 1 i el 100");
             entrada = Integer.parseInt(Entrada.readLine()); 
-            if (numero>entrada){
-                System.out.println("És més gran que " + entrada); 
-               
-            }else if (entrada <= 0) { 
+            if (entrada <= 0) { 
                 System.out.println("Com a mínim 1"); 
               
+            }else if (numero>entrada){
+                System.out.println("És més gran que " + entrada); 
+               
             }else if (entrada >= 100) { 
                 System.out.println("Com a màxim 100");  //*La resta esta fora de rang
           
