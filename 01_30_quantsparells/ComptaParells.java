@@ -20,6 +20,6 @@ public class ComptaParells {
             valor = Integer.parseInt(Entrada.readLine()); 
     	}
     	}
-    System.out.println("Parells introduïts: " + suma);
+    System.out.println("Valors parells introduïts: " + suma);
     }
  }
