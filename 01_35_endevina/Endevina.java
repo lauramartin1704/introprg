@@ -21,7 +21,7 @@ public class Endevina{
             } else if (num == 42) { 
                 encertat = true; //*Li dic que aixó es veritat
             } else {
-                System.out.println("Fora de rang");  //*La resta esta fora de rang
+                System.out.println("Com a mínim 1");  //*La resta esta fora de rang
                 System.out.println("Introdueix un nombre entre el 1 i el 100");
                 num = Integer.parseInt(Entrada.readLine()); 
             }
