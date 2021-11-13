@@ -1,7 +1,7 @@
 /*
 *Retorna Valors amb Salt amb el for
 */
-public class NaturalsIniciFi{
+public class EntersIniciFi{
     public static void main(String [] args){
         
         
