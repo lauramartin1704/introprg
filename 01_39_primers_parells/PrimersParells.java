@@ -1,7 +1,7 @@
 /*
 *Programa que retorna els deus primers de 2 en 2
 */
-public class DeuPrimersParells{
+public class PrimersParells{
     public static void main(String [] args){
     
         int num = 2;
