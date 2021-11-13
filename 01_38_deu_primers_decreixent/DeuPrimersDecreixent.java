@@ -1,7 +1,7 @@
 /*
 *Programa que retorna els de el 10 al 1
 */
-public class DeuPrimersNaturalsDecreixent{
+public class DeuPrimersDecreixent{
     public static void main(String [] args){
         
         int num = 10;
