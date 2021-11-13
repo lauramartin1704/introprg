@@ -1,4 +1,6 @@
-public class Trilal{
+/*
+*Programa que fa un trilal 
+*/public class Trilal{
     public static void main(String [] args){
     
     int fila3 = 10;
