@@ -5,7 +5,7 @@ public class InformeCaracter{
     public static void main(String [] args){
         
         String sin ="";
-        System.out.println("Paraula?");
+        System.out.println("Caràcter?");
         String paraula = Entrada.readLine();
 
         if (paraula.length()>1){
