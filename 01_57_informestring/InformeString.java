@@ -6,7 +6,7 @@ public class InformeString{
         
         System.out.println("Text principal?");
         String text = Entrada.readLine();
-        System.out.println("Text secundari ?");
+        System.out.println("Text secundari?");
         String t = Entrada.readLine();
         System.out.println("Número positiu?");
         int num = Integer.parseInt(Entrada.readLine());
