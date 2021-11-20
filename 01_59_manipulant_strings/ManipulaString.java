@@ -5,6 +5,7 @@
     public static void main(String [] args){
         
         String sin ="";
+        String sina ="";
         System.out.println("Paraula?");
         String paraula = Entrada.readLine();
 
@@ -35,10 +36,10 @@
          //Moure una lletra al inici
         for(int i = 0; i < p; i++){
            if(!(i == 3)){
-                sin += paraula.charAt(i); 
+                sina += paraula.charAt(i); 
            }
         }
-        System.out.println("La composició de quatre és " + " \"" + paraula.charAt(3)+ sin+"\"");
+        System.out.println("La composició de quatre és " + " \"" + paraula.charAt(3)+ sina+"\"");
 
 
         System.out.print("La paraula amb les primeres tres lletres en majúscules i la resta en minúscules és "+" \"" );
