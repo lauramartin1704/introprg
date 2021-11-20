@@ -26,11 +26,11 @@
 
         //Moure una lletra al inici
         for(int i = 0; i < p; i++){
-           if(!(i == 3)){
+           if(!(i == 4)){
                 sin += paraula.charAt(i); 
            }
         }
-        System.out.println("La composició de quatre primeres és" + " \"" +paraula.charAt(3) + sin+"\"");
+        System.out.println("La composició de quatre primeres és" + " \"" + sin+"\"");
 
 
         System.out.print("La paraula amb les primeres tres lletres en majúscules i la resta en minúscules és "+" \"" );
