@@ -1,7 +1,7 @@
  /* 
  * Informe d'strings
  */
- public class ManipulantString{
+ public class ManipulaString{
     public static void main(String [] args){
         
         String sin ="";
