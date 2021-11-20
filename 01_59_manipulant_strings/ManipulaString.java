@@ -22,7 +22,7 @@
         System.out.println("La penúltima lletra és " + "'" + paraula.charAt(p - 2) +"'");
 
         //Print en may
-        System.out.println("La paraula en majúscules és" + " \"" +paraula.toUpperCase() +"\" ");
+        System.out.println("La paraula en majúscules és" + " \"" +paraula.toUpperCase() +"\"");
 
         //Moure una lletra al inici
         for(int i = 0; i < p; i++){
@@ -30,10 +30,10 @@
                 sin += paraula.charAt(i); 
            }
         }
-        System.out.println("La paraula amb la quarta lletra moguda a l’inici " + " \" paraula.charAt(3) + sin\" ");
+        System.out.println("La composició de quatre primeres és" + " \"" +paraula.charAt(3) + sin+"\"");
 
 
-        System.out.print("La paraula amb les primeres tres lletres en majúscules i la resta en minúscules és ");
+        System.out.print("La paraula amb les primeres tres lletres en majúscules i la resta en minúscules és "+" \"" );
 
         //Imprimir les tres primeres lletres en may
         for(int text=0; text<=2; text++){ 
