@@ -9,17 +9,17 @@
         String paraula = Entrada.readLine();
 
         //Print longitud
-        System.out.println("La longitud de la paraula és " + paraula.length());
+        System.out.println("La longitud és " + paraula.length());
         
         //Imprimir la segona lletra
-        System.out.println("La segona lletra de la paraula és " + "'" + paraula.charAt(1) + "'"); 
+        System.out.println("La segona lletra és " + "'" + paraula.charAt(1) + "'"); 
 
         //Print ultima lletra
         int p = paraula.length();
-        System.out.println("La darrera lletra de la paraula és " + "'" + paraula.charAt(p - 1) + "'");
+        System.out.println("La darrera lletra és " + "'" + paraula.charAt(p - 1) + "'");
         
         //Print penultima
-        System.out.println("La penúltima lletra de la paraula és " + "'" + paraula.charAt(p - 2) +"'");
+        System.out.println("La penúltima lletra és " + "'" + paraula.charAt(p - 2) +"'");
 
         //Print en may
         System.out.println("La paraula amb totes les lletres en majúscules és " + "''" + paraula.toUpperCase()+"''");
