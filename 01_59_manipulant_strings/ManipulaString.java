@@ -22,7 +22,7 @@
         System.out.println("La penúltima lletra és " + "'" + paraula.charAt(p - 2) +"'");
 
         //Print en may
-        System.out.println("La paraula amb totes les lletres en majúscules és" + " \"" +paraula.toUpperCase() +"\" ");
+        System.out.println("La paraula en majúscules és" + " \"" +paraula.toUpperCase() +"\" ");
 
         //Moure una lletra al inici
         for(int i = 0; i < p; i++){
