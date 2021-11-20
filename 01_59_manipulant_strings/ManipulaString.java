@@ -24,13 +24,21 @@
         //Print en may
         System.out.println("La paraula en majúscules és" + " \"" +paraula.toUpperCase() +"\"");
 
-        //Moure una lletra al inici
+        //4 primeres
         for(int i = 0; i < p; i++){
            if(!(i == 4)){
                 sin += paraula.charAt(i); 
            }
         }
         System.out.println("La composició de quatre primeres és" + " \"" + sin+"\"");
+
+         //Moure una lletra al inici
+        for(int i = 0; i < p; i++){
+           if(!(i == 3)){
+                sin += paraula.charAt(i); 
+           }
+        }
+        System.out.println("La composició de quatre és " + " \"" + paraula.charAt(3)+ sin+"\"");
 
 
         System.out.print("La paraula amb les primeres tres lletres en majúscules i la resta en minúscules és "+" \"" );
