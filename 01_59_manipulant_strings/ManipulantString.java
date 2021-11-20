@@ -1,14 +1,14 @@
-/*
-* Programa que informa dels caracters
-*/
-public class InformeCaracter{
+ /* 
+ * Informe d'strings
+ */
+ public class ManipulantString{
     public static void main(String [] args){
         
         String sin ="";
-        System.out.println("Caràcter?");
+        System.out.println("Paraula?");
         String paraula = Entrada.readLine();
 
-        if (paraula.length()>1){
+        
         //Imprimir la segona lletra
         System.out.println("La segona lletra de la paraula és " + paraula.charAt(1)); 
 
@@ -46,9 +46,6 @@ public class InformeCaracter{
         for(int resta=3; resta<p; resta++){ 
             System.out.print(paraula.charAt(resta));
         }
-    }else{
-        System.out.println("");
-    }
        
     }
 }
