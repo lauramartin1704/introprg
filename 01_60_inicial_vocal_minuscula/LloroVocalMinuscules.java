@@ -6,7 +6,7 @@ public class LloroVocalMinuscules{
         String paraula = "hola";  
         
         while (!(paraula.isBlank())){
-            System.out.println("El lloro pregunta paraula que comenci per vocal en minúscules");
+            System.out.println("El lloro pregunta paraula que comenci amb vocal en minúscules");
             paraula = Entrada.readLine();
             if(!(paraula.isBlank())){
                 int fin = paraula.length();
