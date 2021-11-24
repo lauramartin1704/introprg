@@ -10,7 +10,7 @@ public class LloroVocalMinuscules{
             paraula = Entrada.readLine();
             if(!(paraula.isBlank())){
                 int fin = paraula.length();
-                char lletra = paraula.charAt(fin - 1);
+                char lletra = paraula.charAt(fin);
                 if (lletra == 'a'|| lletra == 'e' || lletra == 'i'|| lletra == 'o'|| lletra == 'u'){
                     System.out.println("El lloro diu: " + paraula);
                 }
