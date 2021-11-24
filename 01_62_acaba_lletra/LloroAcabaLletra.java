@@ -7,7 +7,7 @@ public class LloroAcabaLletra{
         String paraula = "hola";  
         
         while (!(paraula.isBlank())){
-            System.out.println("El lloro pregunta paraula que finalitzi per lletra");
+            System.out.println("El lloro pregunta paraula que finalitzi per lletra no vocal");
             paraula = Entrada.readLine();
             
             if(!paraula.isBlank()){
