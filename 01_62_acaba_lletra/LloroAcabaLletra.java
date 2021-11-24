@@ -15,12 +15,14 @@ public class LloroAcabaLletra{
                 int lon = paraula.length();
                 char fin = paraula.charAt(lon - 1);
                 
-                if (Character.isLetter(fin) == true && (fin != 'a'|| fin != 'e' || fin != 'i'|| fin != 'o'|| fin != 'u')){
-               System.out.println("El lloro diu: " + paraula);
-                }
+                if (Character.isLetter(fin) == true && (fin == 'a'|| fin == 'e' || fin == 'i'|| fin == 'o'|| fin == 'u')){
+              
+               break;
+                }else{
+                System.out.println("El lloro diu: " + paraula);
             }    
         }
-        System.out.println("Adéu");
-   }
+   }System.out.println("Adéu");
+}
 }
             
