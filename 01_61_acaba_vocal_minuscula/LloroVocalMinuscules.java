@@ -1,5 +1,5 @@
 /*
-*Programa que repeteix paraules que començen per vocals en minuscules
+*Programa que repeteix paraules que acaben per vocals en minuscules
 */
 public class LloroVocalMinuscules{
     public static void main(String [] args){
@@ -7,10 +7,11 @@ public class LloroVocalMinuscules{
         String paraula = "hola";  
         
         while (!(paraula.isBlank())){
-            System.out.println("El lloro pregunta paraula que comenci amb vocal en minúscules");
+            System.out.println("El lloro pregunta paraula que finalitzi per vocal en minúscules");
             paraula = Entrada.readLine();
             if(!(paraula.isBlank())){
-                char lletra = paraula.charAt(0);
+                int fin = paraula.length();
+                char lletra = paraula.charAt(fin - 1);
                 if (lletra == 'a'|| lletra == 'e' || lletra == 'i'|| lletra == 'o'|| lletra == 'u'){
                     System.out.println("El lloro diu: " + paraula);
                 }
