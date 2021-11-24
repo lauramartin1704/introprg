@@ -1,5 +1,6 @@
-//* Programa que repeteix paraules que comencen per vocals i acaben amb una lletra
-
+/* 
+*Programa que repeteix paraules que comencen per vocals i acaben amb una lletra
+*/
 public class LloroAcabaLletra{
     public static void main(String [] args){
         
