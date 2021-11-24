@@ -1,5 +1,6 @@
-//* Programa que repeteix paraules que acaben per vocals en minuscules
-
+/*
+*Programa que repeteix paraules que acaben per vocals en minuscules
+*/
 public class LloroVocalMinuscules{
     public static void main(String [] args){
         
