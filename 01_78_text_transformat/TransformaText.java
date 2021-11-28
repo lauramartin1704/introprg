@@ -1,5 +1,6 @@
-//*Programa que demana text i el transforma segons unes regles específiques.
-
+/*
+*Programa que demana text i el transforma segons unes regles específiques.
+*/
 public class TransformaText{
     public static void main (String [] args){
     
