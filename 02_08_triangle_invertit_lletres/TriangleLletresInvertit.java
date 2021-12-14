@@ -9,20 +9,20 @@ public class TriangleLletresInvertit{
         if(text.isBlank()){return;}
         
         
-        dibuixaTriangle(text);
+        dibuixaTriangleInvertit(text);
         
     }    
         
-    public static void dibuixaTriangle(String text){
+    public static void dibuixaTriangleInvertit(String text){
 
         for(int linia = text.length()-1; linia >= 0; linia--){
             
-            dibuixaLinia(text, linia);
+            dibuixaLiniaInvertida(text, linia);
             System.out.println();
         }
     }        
     
-    public static void dibuixaLinia(String text, int linia){
+    public static void dibuixaLiniaInvertida(String text, int linia){
     
         for(int a = linia; a >= 0; a--){
                  
