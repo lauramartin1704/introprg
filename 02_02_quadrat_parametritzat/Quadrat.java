@@ -1,26 +1,24 @@
 /*
- * Programa que dibuixa un quadrat amb el costat indicat per args[0]
- * Pressuposa que args[0] conté un valor enter vàlid i que args[1]
- * està definit.
+ * Programa que dibuixa un quadrat de X amb el costat indicat per args[0]
+ * Pressuposa que args[0] conté un valor enter vàlid
  */
 
 public class Quadrat {
     public static void main(String[] args) {
         int costat = Integer.parseInt(args[0]);
-        char caracter = args[1].charAt(0);
-        dibuixaQuadrat(costat, caracter);
+        dibuixaQuadrat(costat);
     }
     
-    public static void dibuixaQuadrat(int costat, char caracter) {
+    public static void dibuixaQuadrat(int costat) {
         for (int linia=1; linia <= costat; linia++) {
-            dibuixaLinia(costat, caracter);
+            dibuixaLinia(costat);
             System.out.println();
         }
     }
 
-    public static void dibuixaLinia(int costat, char caracter) {
+    public static void dibuixaLinia(int costat) {
         for (int columna=1; columna <= costat; columna++) {
-            System.out.print(" "+caracter);
+            System.out.print(" X");
         }
     }
 }
