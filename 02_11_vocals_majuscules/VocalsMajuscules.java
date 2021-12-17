@@ -1,7 +1,7 @@
 /*
 *Programa que demana text i retorna la primera lletra de cada paraula en majúscula.
 */
-public class MajusculitzaInicials{
+public class VocalsMajuscules{
     public static void main (String [] args){
             
         System.out.println("Text?");
