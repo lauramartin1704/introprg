@@ -1,32 +1,40 @@
-/*
-*Programa que demana text i retorna la primera lletra de cada paraula en majúscula.
+/* 
+*Programa que demana un text i retorna les vocals amb Majúscules.
 */
 public class VocalsMajuscules{
-    public static void main (String [] args){
-            
+    public static void main(String [] args){
+        
+       
         System.out.println("Text?");
-        String text = Entrada.readLine(); 
+        String textAux = Entrada.readLine();
+        String text = textAux.toLowerCase();
         
         if(text.isBlank()){return;}
         
-        majusculitzaInicials(text);
+        majusculitzaVocals(text);
+    
     }
-    public static void majusculitzaInicials(String text){
-        
-        boolean primeraLletra = true;
+    
+    public static void majusculitzaVocals(String text){
+    
+        String vocals = "aeiou";     
+        boolean conteVocal = false;  
         
         for(int i = 0; i < text.length(); i++){
-            
-               if(!Character.isLetter(text.charAt(i)) && !Character.isDigit(text.charAt(i))){
-                    primeraLletra = true;               
-                    System.out.print(text.charAt(i));
-               } else if (primeraLletra) {
-                    System.out.print(Character.toUpperCase(text.charAt(i))); 
-                    primeraLletra = false;
-               } else {
-                    System.out.print(Character.toLowerCase(text.charAt(i)));   
-               }
-         }
-         System.out.println();
+            conteVocal = false;
+            for(int n = 0; n < vocals.length(); n++){
+                
+                if(text.charAt(i) == vocals.charAt(n)){
+                    System.out.print(Character.toUpperCase(text.charAt(i)));
+                    conteVocal = true;
+                    break;
+                }
+            }
+            if(!conteVocal){
+            System.out.print(Character.toLowerCase(text.charAt(i)));
+            }
+       }
+       System.out.println();    
     }
-}
+} 
+   
