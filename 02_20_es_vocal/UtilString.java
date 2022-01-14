@@ -1,4 +1,6 @@
-/*Funció que comprova si es vocal.Té en compte si son mayúscules o no.*/
+/*
+Funció que comprova si es vocal.Té en compte si son mayúscules o no.
+*/
 
 public class UtilString {
     
