@@ -1,4 +1,4 @@
-// Programa per gestionar les confirmacions
+/* Programa per gestionar les confirmacions*/
 //Entrada: String
 //Sortida: boolean
 
