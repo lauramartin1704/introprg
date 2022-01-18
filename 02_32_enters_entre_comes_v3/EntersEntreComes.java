@@ -8,7 +8,7 @@ public class EntersEntreComes {
         System.out.println("Quants?");
         int quantitat = Integer.parseInt(Entrada.readLine());
         
-        if(quantitat < 0){
+        if(quantitat <= 0){
             System.out.println("Res a fer");
             return;
         }
