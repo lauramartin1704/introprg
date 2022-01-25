@@ -2,21 +2,31 @@
 /* Llibreria externa
  * esEnter: comprova un número
  */ 
- 
-public class UtilString{
-    
+public class UtilString {
     public static boolean esEnter(String text){
-        
-        if (text.isEmpty()) return false;
+        int digit =0;
         for (int i = 0; i < text.length(); i++){
-            if (text.charAt(0) == '-' || text.charAt(0) == '+') {
-            }else if (Character.isDigit(text.charAt(i)) && Character.isDigit(text.charAt(2))){
-            
-                continue;
-            } else {
+            char caracter = text.charAt(i);
+
+            if (Character.isDigit(caracter)){
+                digit=1;
+            }else {
+                digit = 0;
+            }
+            if (text.startsWith("-") || text.startsWith("+")){
+                digit=1;
+            }
+            if (text.startsWith(" ")){
                 return false;
             }
-       } 
-       return true;
-    }  
+            if (Character.isLetter(caracter)){
+                return false;
+            }
+        }
+        if (digit==1){
+            return true;
+        }else {
+            return false;
+        }
+    }
 }
