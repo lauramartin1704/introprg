@@ -1,23 +1,20 @@
 //* Funció que comprova si es enter un número
 
 public class EsEnter{
-    public static void main(String [] args){
-        
+    public static void main (String[] args) {
         System.out.println("Introdueix texts (enter sol per finalitzar)");
-        String text = Entrada.readLine();
-        
-        while(!text.isEmpty()) {
-            text = text.strip();  //Treure els espais en blanc
-            boolean valid = UtilString.esEnter(text);
-            
-            if(valid){
+        String text = "x";
+        while (text.isBlank()==false && text.isEmpty()==false){
+            text = Entrada.readLine();
+            text = text.strip();
+            text = text.trim();
+            boolean comprovaEnter = UtilString.esEnter(text);
+            if (comprovaEnter==true){
                 System.out.println("És enter");
-            } else {
+            }else if (comprovaEnter== false && text.isBlank()==false){
                 System.out.println("No és enter");
             }
-            text = Entrada.readLine();
         }
-        System.out.println("Adéu"); 
-    
+        System.out.println("Adéu");
     }
 }
