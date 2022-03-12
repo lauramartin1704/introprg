@@ -1,5 +1,5 @@
 /*
- * Classe UsaGatRenat: Demana posicio
+ * Classe UsaGatRenat: El renat diu....i diu si s'aixeca, si s'asseu, si s'estira..
  */
 
 public class UsaGatRenat{
