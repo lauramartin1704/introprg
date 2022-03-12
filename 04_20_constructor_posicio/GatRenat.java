@@ -30,9 +30,7 @@ public class GatRenat {
         }
     }
     public void setPosicio(String novaPosicio){
-         if (novaPosicio.equals("estirat") ||
-             novaPosicio.equals("dret") ||
-             novaPosicio.equals("assegut")) {
+         if (novaPosicio.equals("estirat")) {
                     posicio = novaPosicio;
          } else {
             posicio = "estirat";
