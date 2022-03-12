@@ -1,5 +1,5 @@
 /*
- * GatRenat: provant els Setter i els Getters
+ * GatRenat: provant els Setter i els Getters de Vides, posició, estaViu, estaAssegut, estaDret...
  */
 
 public class GatRenat {

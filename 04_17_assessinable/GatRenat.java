@@ -1,5 +1,5 @@
 /*
- * GatRenat: Metodes mor() i resucita()
+ * GatRenat: Metodes mor(), resucita() i getters i setters de GatRenat
  */
 
 public class GatRenat {

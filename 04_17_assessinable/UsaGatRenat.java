@@ -1,5 +1,5 @@
 /*
- * Classe UsaGatRenat: Matem a gat Renat
+ * Classe UsaGatRenat: Matem a gat Renat, el rematem i resicita recuperant les vides principals.
  */
 
 public class UsaGatRenat{
