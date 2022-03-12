@@ -1,5 +1,5 @@
 /*
- * GatRenat: provant els Setter i els Getters
+ * GatRenat: provant els Setter i els Getters per a dir en quina posicio està el GatRenat.
  */
 
 public class GatRenat {

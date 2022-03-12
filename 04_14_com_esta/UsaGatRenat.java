@@ -1,5 +1,5 @@
 /*
- * Classe UsaGatRenat: Demana posicio
+ * Classe UsaGatRenat: Demana vides i posicio, diu si esta viu, si esta dret, si esta assegut o si esta estirat.
  */
 
 public class UsaGatRenat{
