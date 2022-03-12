@@ -1,5 +1,5 @@
 /*
- * Classe UsaGatRenat: Demana posicio
+ * Classe UsaGatRenat: Demana posicio, diu les vides inicials, Posicio inicial, demana una nova posició i diu la posició final.
  */
 
 public class UsaGatRenat{
