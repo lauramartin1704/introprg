@@ -1,3 +1,6 @@
+/*
+*Usa GatRenat que diu les vides que te al inici, la posició Inicial y la posició final.
+*/
 public class UsaGatRenat{
     public static void main(String[] args){
         
