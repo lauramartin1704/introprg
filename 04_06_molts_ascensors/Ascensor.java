@@ -25,7 +25,7 @@ public class Ascensor {
     public static boolean esEnter(String num){
         boolean esEnter = true;
         for (int i=0; i < num.length()-1; i++){
-            if(!Character.isDigit(num.charAt(i))){
+            if((!Character.isDigit(num.charAt(i)))){
                 esEnter=false;
                 break;
             }
