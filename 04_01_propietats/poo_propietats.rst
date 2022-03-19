@@ -31,18 +31,6 @@ Pregunta 1. El nom del fitxer
 Per que funcioni, el nom del fitxer que contingui el programa anterior ha
 de ser ``GatRenat.java``.
 
-Si reanomeno el fitxer anterior a ``UnNomQualsevol.java``, em trobo el
-següent resultat a l'hora de compilar:
-
-::
-
-    $ javac UnNomQualsevol.java
-    UnNomQualsevol.java:1: error: class GatRenat is public, should be declared in a file named GatRenat.java
-	public class GatRenat {
-       	^
-	1 error
-
-
 Pregunta 2. Sortida
 ===================
 
@@ -63,7 +51,7 @@ línia 6 és la línia 4.
 Pregunta 4. Inicialització
 ==========================
 
-El valor que es mostra per pantalla, és assignat a la línia XXX.
+El valor que es mostra per pantalla, és assignat a la línia 2.
 
 Pregunta 5. No inicialització
 =============================
