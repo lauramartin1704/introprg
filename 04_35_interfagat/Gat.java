@@ -64,7 +64,7 @@ public class Gat implements EsserViu{
             vides++;
             return "guai!";
         } else {
-            return "encara miolo";
+            return "encara visc";
         }
     }
     public String ressuscita(int vides){ 
@@ -72,7 +72,7 @@ public class Gat implements EsserViu{
             this.vides = vides;
             return "guai!";
         } else {
-            return "encara visc";
+            return "encara miolo";
         } 
     }
     
