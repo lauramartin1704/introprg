@@ -64,7 +64,7 @@ public class Gat implements EsserViu{
             vides++;
             return "guai!";
         } else {
-            return "encara visc";
+            return "encara miolo";
         }
     }
     public String ressuscita(int vides){ 
