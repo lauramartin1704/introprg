@@ -13,7 +13,7 @@ public class Ascensor {
 		if (nouPis < 11 && nouPis > -2) {
 			pis = nouPis;
 		} else{
-			break;
+			return;
 		}
     }
     public String getMoviment() {
@@ -23,7 +23,7 @@ public class Ascensor {
 		if (nouMoviment.equals("pujant") || nouMoviment.equals("baixant") || nouMoviment.equals("aturat")) {
 			moviment = nouMoviment;
 		}else{
-			break;
+			return;
 		}	
 	}
 		
