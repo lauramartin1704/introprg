@@ -14,19 +14,19 @@
          System.out.printf("Inicialment l'ascensor està %s%n", ascensor.getEstat());
 
          // aturat a pujant
-         boolean resposta = ascensor.arrencaAmunt();
+         boolean resposta = ascensor.estaPujant();
          System.out.printf("En arrencar amunt l'ascensor respon %b i està %s%n",
                  resposta, ascensor.getEstat());
 		
          // demanem que baixi sense aturar
-         resposta = ascensor.arrencaAbaix();
+         resposta = ascensor.estaBaixant();
          System.out.printf("En arrencar a baix l'ascensor respon %b i està %s%n",
                  resposta, ascensor.getEstat());
 
          // passem del pis indicat al la planta baixa
          System.out.println("Anant a la planta baixa quan està " + ascensor.getEstat());
          while (! ascensor.estaAbaix()) {
-             ascensor.arrencaAbaix();
+             ascensor.estaBaixant();
              ascensor.seguentPis();       // passa al següent pis
              System.out.println("\t ara està "+ ascensor.getEstat());
          }
