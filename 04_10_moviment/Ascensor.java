@@ -3,6 +3,6 @@
 public class Ascensor {
 	
     public int pis = -1;  //planta inicial 
-    public String posicio = ("aturat");//posicio inicial 
+    public String moviment = ("aturat");//posicio inicial 
     
 }
