@@ -12,7 +12,9 @@ public class Ascensor {
 	public void setPis(int nouPis) {
 		if (nouPis < 11 && nouPis > -2) {
 			pis = nouPis;
-		} 		
+		} else{
+			return;
+		}
     }
     public String getMoviment() {
 		return moviment;
