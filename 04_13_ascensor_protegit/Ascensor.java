@@ -13,7 +13,7 @@ public class Ascensor {
 		if (nouPis < 11 && nouPis > -2) {
 			pis = nouPis;
 		} else{
-			return;
+			System.out.println("escriu un numero");
 		}
     }
     public String getMoviment() {
