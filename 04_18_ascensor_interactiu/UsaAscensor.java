@@ -30,7 +30,7 @@
              ascensor.seguentPis();       // passa al següent pis
              System.out.println("\t ara està "+ ascensor.getEstat());
          }
-         ascensor.aturat();
+         ascensor.estaAturat();
          System.out.printf("Està %s. Final de trajecte!%n", ascensor.getEstat());
      }
  }

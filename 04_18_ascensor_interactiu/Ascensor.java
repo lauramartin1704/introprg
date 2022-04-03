@@ -58,7 +58,7 @@ public class Ascensor {
 		estat = (moviment + " al pis " + pis);
 		return estat;
 	}
-	public boolean aturat() {
+	public boolean estaAturat() {
 		if (aturat == false) {
 			movent = false;
 			aturat = true;
