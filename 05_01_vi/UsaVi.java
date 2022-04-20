@@ -12,3 +12,4 @@ public class UsaVi {
         System.out.println("Vi modificat" + vi);
     }
 }
+
