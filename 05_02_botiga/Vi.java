@@ -61,7 +61,7 @@ public class Vi {
         String nomValid = "";
 
         for(int i = 0; i < nombre.length(); i++){
-            if(Character.isLetterOrDigit(nombre.charAt(i))){
+            if(Character.isLetterOrDigit(nombre.charAt(i))|| nombre.charAt(i)=='\''){
                 nomValid += nombre.charAt(i); 
             } else if(Character.isWhitespace(nombre.charAt(i))){    
                 if(!Character.isWhitespace(nombre.charAt(i+1))){
