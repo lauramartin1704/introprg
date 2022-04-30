@@ -10,8 +10,16 @@ public class Vi {
     }
     public Vi (String nom, int preu, int estoc){
         this.nom = normalitzaNom(nom);
-        setPreu(preu);
-        setEstoc(estoc);
+        if(estoc < 0){
+            this.estoc = -1;
+        } else {
+            setEstoc(estoc);
+        }
+        if(preu < 0){
+            this.preu = -1;
+        } else {
+            setPreu(preu);
+        }
     }
 
     public String getNom() {  
@@ -26,17 +34,13 @@ public class Vi {
     
     // No pot ser negatiu 
     public void setPreu(int preu) { 
-        if(preu < 0){
-            this.preu = -1;
-        }else{
+        if(preu > 0){
             this.preu = preu;
         }
     } 
     // No pot ser negatiu, si l'estoc no es vàlid serà 0
     public void setEstoc(int estoc) {
-        if(estoc < 0){
-            this.estoc = -1;
-        }else{
+        if(estoc > 0){
             this.estoc = estoc;
         }
     } 
