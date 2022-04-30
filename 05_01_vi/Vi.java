@@ -63,7 +63,7 @@ public class Vi {
     
     @Override
     public String toString() {
-        return String.format("%n\t Vi: %s%n\tPreu: %d%n\tEstoc: %d%n",
+        return String.format("%n    Vi: %s%n    Preu: %d%n    Estoc: %d%n",
                          nom, preu, estoc);
     }
 }
