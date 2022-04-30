@@ -52,17 +52,17 @@ public class Vi {
         }
 
         String nombre = nom.trim();
-        String nomValid = nombre.replace("  ", " ");
+        String nomValid = "";
 
-        // for(int i = 0; i < nombre.length(); i++){
-        //     if(Character.isLetterOrDigit(nombre.charAt(i))){
-        //         nomValid += nombre.charAt(i); 
-        //     } else if(Character.isWhitespace(nombre.charAt(i))){    
-        //         if(!Character.isWhitespace(nombre.charAt(i+1))){
-        //             nomValid += nombre.charAt(i);
-        //         } 
-        //     }
-        // }
+        for(int i = 0; i < nombre.length(); i++){
+            if(Character.isLetterOrDigit(nombre.charAt(i))){
+                nomValid += nombre.charAt(i); 
+            } else if(Character.isWhitespace(nombre.charAt(i))){    
+                if(!Character.isWhitespace(nombre.charAt(i+1))){
+                    nomValid += nombre.charAt(i);
+                } 
+            }
+        }
         return nomValid;
     }
 
