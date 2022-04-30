@@ -26,11 +26,19 @@ public class Vi {
     
     // No pot ser negatiu 
     public void setPreu(int preu) { 
+        if(preu < 0){
+            this.preu = -1;
+        }else{
             this.preu = preu;
+        }
     } 
     // No pot ser negatiu, si l'estoc no es vàlid serà 0
     public void setEstoc(int estoc) {
-     this.estoc = estoc;   
+        if(estoc < 0){
+            this.estoc = -1;
+        }else{
+            this.estoc = estoc;
+        }
     } 
     public void setNom(String nom) {
         this.nom = normalitzaNom(nom);
@@ -64,10 +72,10 @@ public class Vi {
         if(nom.equals("NOM NO VÀLID!")){
             return false;
         }
-        if(estoc < 0){
+        if(estoc == -1){
             return false;
         } 
-        if(preu < 0){
+        if(preu == -1){
             return false;
         }
 
