@@ -43,20 +43,21 @@ public class Vi {
      * No pot tenir espais ni davant ni darrere
      * No pot tenir més d'un espai entre paraules */     
     public static String normalitzaNom(String nom) {
-        if(nom.isBlank()){
+        if(nom.isEmpty() || nom.isBlank() ){
             return "nom no vàlid";
         }
         String nombre = nom.trim();
-        String nomValid = "";
-        for(int i = 0; i < nombre.length(); i++){
-            if(Character.isLetterOrDigit(nombre.charAt(i))){
-                nomValid += nombre.charAt(i); 
-            } else if(Character.isWhitespace(nombre.charAt(i))){    
-                if(!Character.isWhitespace(nombre.charAt(i+1))){
-                    nomValid += nombre.charAt(i);
-                } 
-            }
-        }
+        String nomValid = nom.replace("  ", " ");
+
+        // for(int i = 0; i < nombre.length(); i++){
+        //     if(Character.isLetterOrDigit(nombre.charAt(i))){
+        //         nomValid += nombre.charAt(i); 
+        //     } else if(Character.isWhitespace(nombre.charAt(i))){    
+        //         if(!Character.isWhitespace(nombre.charAt(i+1))){
+        //             nomValid += nombre.charAt(i);
+        //         } 
+        //     }
+        // }
         return nomValid;
     }
     
