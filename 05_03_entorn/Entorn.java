@@ -151,7 +151,7 @@ public class Entorn {
         }
     }
     private static void mostraAjuda() {
-        System.out.println("Comandes disponibles:\najuda \ncerca \nafegeix \nmodifica \nelimina \nsurt");
+        System.out.println("Comandes disponibles:\najuda\ncerca\nafegeix\nmodifica\nelimina\nsurt");
     }
     private static void mostraPrompt() {
         System.out.print("botiga> ");
