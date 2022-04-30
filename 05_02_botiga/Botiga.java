@@ -36,18 +36,18 @@ public class Botiga {
     /*Busca el vi --> no: retorna null
      * sí --> posicio posara null i retorna el vi
       si hi ha estoc, no l'elimina, retornara null */
-    public Vi elimina(Vi vino){
-       
-        if(cerca(vino.getNom()) == null){
+    public Vi elimina(String nom){
+        Vi vi = cerca(nom);
+        if(vi == null){
             return null;
         }  
-        if(vino.getEstoc() > 0){
+        if(vi.getEstoc() > 0){
             return null;
         }
         for (int i=0; i <vins.length; i++){
-            if(vins[i].equals(vino)){
+            if(vins[i].equals(vi)){
                 vins[i] = null;
-                return vino;
+                return vi;
             }
         }
         return null;
