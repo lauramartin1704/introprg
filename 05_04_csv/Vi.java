@@ -114,13 +114,17 @@ public class Vi {
             if(p < 0){
                 return null;
             }
-        }     
+        } else {
+            return null;
+        }  
         if(UtilString.esEnter(vins[2])){
             e = Integer.valueOf(vins[2]);
             if(e < 0){
                 return null;
             }
-        }     
+        } else {
+            return null;
+        }   
 
         Vi vi = new Vi(vins[0], p, e);
         if(vi.esValid()){
