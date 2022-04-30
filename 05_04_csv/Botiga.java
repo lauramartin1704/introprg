@@ -89,10 +89,12 @@ public class Botiga {
         this.recorregut = 0;
     }
     public Vi getSeguent(){
-       
-        Vi vi = vins[recorregut];
-        recorregut = recorregut + 1;
-        return vi;
+       for(int i = recorregut; i < vins.length; i++){
+           Vi vi = vins[recorregut];
+           recorregut = recorregut + 1;
+           if(vi == null) continue;
+           return vi;
+       }
+       return null;
     }
-    
 }
