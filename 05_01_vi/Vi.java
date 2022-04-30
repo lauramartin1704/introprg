@@ -38,14 +38,19 @@ public class Vi {
             this.estoc = 0;
         }     
     } 
+    public void setNom(String nom) {
+        this.nom = normalitzaNom(nom);
+    }
     
     /* Nom no pot ser espais en blanc o buit
      * No pot tenir espais ni davant ni darrere
      * No pot tenir més d'un espai entre paraules */     
     public static String normalitzaNom(String nom) {
-        if(nom.isEmpty() || nom.isBlank() ){
-            return "nom no vàlid";
+
+        if(nom.isEmpty() || nom.isBlank()){
+            return "NOM NO ES VÀLID";
         }
+
         String nombre = nom.trim();
         String nomValid = nom.replace("  ", " ");
 
@@ -59,6 +64,13 @@ public class Vi {
         //     }
         // }
         return nomValid;
+    }
+
+    public boolean esValid(){
+        if(nom.equals("NOM NO VALID")){
+            return false;
+        }
+        return true;
     }
     
     @Override
