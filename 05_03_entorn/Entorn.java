@@ -42,11 +42,16 @@ public class Entorn {
         }
         Vi vi = botiga.cerca(nom);
         if(vi != null){
+            System.out.println("A eliminar:"+ vi);
                 System.out.print("Segur?>");
                 String r = Entrada.readLine();
                 if(UtilString.respostaABoolean(r)){
                    Vi vino = botiga.elimina(nom);
+                   if(vino != null){
                    System.out.println("Eliminat");
+                   }else{
+                    System.out.println("ERROR: no s'ha pogut eliminar");
+                   }
                 }else{
                     System.out.println("No eliminat");
                 }
