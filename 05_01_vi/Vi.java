@@ -52,7 +52,7 @@ public class Vi {
         }
 
         String nombre = nom.trim();
-        String nomValid = nom.replace("  ", " ");
+        String nomValid = nombre.replace("  ", " ");
 
         // for(int i = 0; i < nombre.length(); i++){
         //     if(Character.isLetterOrDigit(nombre.charAt(i))){
