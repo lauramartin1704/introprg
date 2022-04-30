@@ -51,7 +51,7 @@ public class Entorn {
                     System.out.println("No eliminat");
                 }
         }else{
-            System.out.println("ERROR: no s'ha pogut eliminar");
+            System.out.println("No trobat");
         }
     }
     private void processaModifica() {
