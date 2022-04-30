@@ -21,6 +21,10 @@ public class Botiga {
     * Retornara el vi introduït
     */
     public Vi afegeix(Vi vino){
+
+        if(!vino.esValid()){
+            return null;
+        }
         
         if(cerca(vino.getNom()) == null){
             for (int i=0; i <vins.length; i++){
@@ -58,10 +62,10 @@ public class Botiga {
     public Vi cerca(String nom){
         
         String nombre = Vi.normalitzaNom(nom);
-
+        nombre = nombre.toLowerCase();
         for(Vi vi: vins){
             if(vi != null){
-                if(vi.getNom().equals(nombre)){
+                if(vi.getNom().toLowerCase().equals(nombre)){
                     return vi;
                 }
             }
