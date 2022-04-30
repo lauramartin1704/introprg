@@ -10,8 +10,16 @@ public class Vi {
     }
     public Vi (String nom, int preu, int estoc){
         this.nom = normalitzaNom(nom);
-        setPreu(preu);
-        setEstoc(estoc);
+        if(estoc < 0){
+            this.estoc = -1;
+        } else {
+            setEstoc(estoc);
+        }
+        if(preu < 0){
+            this.preu = -1;
+        } else {
+            setPreu(preu);
+        }
     }
 
     public String getNom() {  
@@ -32,26 +40,55 @@ public class Vi {
     } 
     // No pot ser negatiu, si l'estoc no es vàlid serà 0
     public void setEstoc(int estoc) {
-        if(estoc >= 0){
+        if(estoc > 0){
             this.estoc = estoc;
-        } else {
-            this.estoc = 0;
-        }     
+        }
     } 
+    public void setNom(String nom) {
+        this.nom = normalitzaNom(nom);
+    }
     
     /* Nom no pot ser espais en blanc o buit
      * No pot tenir espais ni davant ni darrere
      * No pot tenir més d'un espai entre paraules */     
     public static String normalitzaNom(String nom) {
-        if(nom.isBlank()){
-            return "nom no vàlid";
+
+        if(nom.isEmpty() || nom.isBlank()){
+            return "NOM NO VÀLID!";
         }
-        return nom.trim().replaceAll(" +", " ");
+
+        String nombre = nom.trim();
+        String nomValid = "";
+
+        for(int i = 0; i < nombre.length(); i++){
+            if(Character.isLetterOrDigit(nombre.charAt(i))){
+                nomValid += nombre.charAt(i); 
+            } else if(Character.isWhitespace(nombre.charAt(i))){    
+                if(!Character.isWhitespace(nombre.charAt(i+1))){
+                    nomValid += nombre.charAt(i);
+                } 
+            }
+        }
+        return nomValid;
+    }
+
+    public boolean esValid(){
+        if(nom.equals("NOM NO VÀLID!")){
+            return false;
+        }
+        if(estoc == -1){
+            return false;
+        } 
+        if(preu == -1){
+            return false;
+        }
+
+        return true;
     }
     
     @Override
     public String toString() {
-        return String.format("%n\t Vi: %s%n\t Preu: %d%n\t Estoc: %d%n",
+        return String.format("%n    Vi: %s%n    Preu: %d%n    Estoc: %d%n",
                          nom, preu, estoc);
     }
 }
