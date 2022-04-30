@@ -95,7 +95,7 @@ public class Entorn {
         }   
         Vi vino = botiga.modifica(new Vi(nom, p, e));
         if(vino != null){
-            System.out.println("Modificat: \n"+vino);
+            System.out.println("Modificat:\n"+vino);
         }/*else{
             System.out.println("ERROR: no s'ha pogut afegir");
         }*/
@@ -108,7 +108,7 @@ public class Entorn {
         }
         Vi vi = botiga.cerca(nom);
         if(vi != null){
-            System.out.println("Trobat: \n"+vi);
+            System.out.println("Trobat:\n"+vi);
         }else{
             System.out.println("No trobat");
         }
@@ -145,7 +145,7 @@ public class Entorn {
         }
         Vi vi = botiga.afegeix(new Vi(nom, p, e));
         if(vi != null){
-            System.out.println("Introduït: \n"+vi);
+            System.out.println("Introduït:\n"+vi);
         }else{
             System.out.println("ERROR: no s'ha pogut afegir");
         }
