@@ -48,7 +48,7 @@ public class Vi {
     public static String normalitzaNom(String nom) {
 
         if(nom.isEmpty() || nom.isBlank()){
-            return "NOM NO ES VÀLID";
+            return "NOM NO VÀLID!";
         }
 
         String nombre = nom.trim();
