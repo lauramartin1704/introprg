@@ -1,4 +1,6 @@
-/* Aquesta classe es una representació d'un Vi*/
+/* 
+*Aquesta classe es una representació d'un Vi.
+*/
 
 public class Vi {
     private String nom;
