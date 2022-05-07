@@ -1,4 +1,6 @@
-/* Class Botiga */
+/* 
+*Class Botiga que fa diferents accions.
+*/
 
 public class Botiga {
     private int DEFAULT_MAX_VINS;

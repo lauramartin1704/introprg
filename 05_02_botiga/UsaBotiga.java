@@ -1,18 +1,21 @@
+/*
+*Classe usaBotifa que fa uma comprovació del funcionament de la classe Botiga.
+*/
 public class UsaBotiga {
     public static void main(String[] args) {
         System.out.println("Creem uns quants vins");
         Vi[] vins = {
-            new Vi("Roura Blanc", 1234, 42),
-            new Vi("Cercium", 535, 30),
-            new Vi("Llum d'Alba Blanc", 1750, 12)
+                new Vi("Roura Blanc", 1234, 42),
+                new Vi("Cercium", 535, 30),
+                new Vi("Llum d'Alba Blanc", 1750, 12)
         };
-        for (int i=0; i<vins.length; i++) {
+        for (int i = 0; i < vins.length; i++) {
             System.out.println("Creat" + vins[i]);
         }
 
-        Botiga botiga = new Botiga(vins.length - 1);    // no hi cabran tots els vins
+        Botiga botiga = new Botiga(vins.length - 1); // no hi cabran tots els vins
         System.out.println("Afegim els vins creats a la botiga");
-        for (int i=0; i<vins.length; i++) {
+        for (int i = 0; i < vins.length; i++) {
             Vi resposta = botiga.afegeix(vins[i]);
             System.out.println("En afegir" + vins[i] + "la botiga ens respon " + resposta);
         }
