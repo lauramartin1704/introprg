@@ -1,5 +1,5 @@
 /*
-*Classe usaBotifa que fa uma comprovació del funcionament de la classe Botiga.
+*Classe usaBotiga que fa uma comprovació del funcionament de la classe Botiga.
 */
 public class UsaBotiga {
     public static void main(String[] args) {

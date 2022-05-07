@@ -1,7 +1,11 @@
+/*
+*Classe UsaHora que fa la realitzció de les accions de hora.
+*/
+
 public class UsaHora {
     private static void canviaHora(Hora hora, int hores, int minuts, int segons) {
-        
-        try{
+
+        try {
             hora.setHores(hores);
             hora.setMinuts(minuts);
             hora.setSegons(segons);
