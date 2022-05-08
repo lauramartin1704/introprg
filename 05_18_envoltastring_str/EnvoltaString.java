@@ -17,7 +17,7 @@
         }
         if (obj instanceof EnvoltaString) {  // si ja ni tant sols és ni un EnvoltaString malament
            String objString = (String) obj;
-           EnvoltaString altre = (EnvoltaString) obj;
+           EnvoltaString altre = new EnvoltaString(objString);
            return valor.toUpperCase().equals(altre.valor.toUpperCase());
         }
         return false;
