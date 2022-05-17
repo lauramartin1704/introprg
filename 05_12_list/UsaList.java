@@ -1,5 +1,6 @@
 /* 
-Programa que crea un ArrayList i provem certes funcioanlitats 
+*Programa que crea un ArrayList 
+*Provem certes funcionalitats 
 */
 
 import java.util.List;
