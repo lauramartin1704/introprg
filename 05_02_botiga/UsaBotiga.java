@@ -1,6 +1,6 @@
 /*
-*Classe usaBotiga que fa uma comprovació del funcionament de la classe Botiga.
-*/
+ * Aquesta clase fa una comprovació ràpida del funcionament de la classe Botiga
+ */
 public class UsaBotiga {
     public static void main(String[] args) {
         System.out.println("Creem uns quants vins");
