@@ -1,5 +1,6 @@
 /* 
 *Class Botiga que fa diferents accions.
+*Com pot ser Afegir un vi, eliminar un vi, cercar i modificar.
 */
 public class Botiga {
     private int DEFAULT_MAX_VINS;
