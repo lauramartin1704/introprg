@@ -1,3 +1,7 @@
+/*
+*Clase UsaHora que indica les hores.
+*/
+
 public class UsaHora {
     public static void main(String[] args) {
         Hora hora = new Hora();
