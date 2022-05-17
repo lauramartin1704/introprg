@@ -1,5 +1,5 @@
 /*
-*
+*Classe entorn "menu" per a les diferents opcions
 */
 import java.io.BufferedReader;
 import java.io.FileReader;

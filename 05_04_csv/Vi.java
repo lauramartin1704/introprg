@@ -1,5 +1,7 @@
-/* Aquesta classe es una representació d'un Vi*/
-
+/* 
+*Aquesta classe es una representació d'un Vi.
+*Amb els seus setters i getters.
+*/
 public class Vi {
     private String nom;
     private int preu;   
