@@ -1,5 +1,6 @@
 /*
  * Clase que considera iguals dos EnvoltaString.
+ * Quan els seus valors coincideixen sense tenir en compte majúscules i minúscules.
  */
 public class EnvoltaString {
     private String valor;
