@@ -1,5 +1,6 @@
 /*
 *Classe entorn "menu" per a les diferents opcions
+*Opcio: ajuda, afegeix, cerca, modifica, elimina
 */
 public class Entorn {
     private final Botiga botiga = new Botiga();
