@@ -1,5 +1,5 @@
 /* 
-*Programa que crea un ArrayList 
+*Programa que crea un ArrayList, practiquem l'us d'una list
 *Provem certes funcionalitats 
 */
 
