@@ -1,5 +1,6 @@
 /*
 *Clase UsaHora que indica les hores.
+*Passant per un control d'errors que indica true o false.
 */
 
 public class UsaHora {
